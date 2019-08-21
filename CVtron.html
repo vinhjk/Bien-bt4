@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Chu vi hinh tron</h3>
+R <input type="text" id="r">
+<input type="button" id="cv" value="Start" onclick="tinhCV();">
+<script>
+    function tinhCV() {
+        var r = document.getElementById('r');
+        var cv = document.getElementById('cv');
+        cv = (parseFloat(r.value)*2*3.14);
+        var CVfix = cv.toFixed(2);
+        alert('Chu vi hinh tron la :' + CVfix);
+    }
+</script>
+</body>
+</html>
